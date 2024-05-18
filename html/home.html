@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Glassmorphism Login form</title>
+  <title>Custom Navbar</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="../css/home.css">
-
+  <script type="text/javascript" src="../js/home.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<section>
-  <div class="form-box">
-    <div class="form-value">
-      <form action="">
-        <h2>Login</h2>
-        <div class="inputbox">
-          <ion-icon name="mail-outline"></ion-icon>
-          <input type="email" required>
-          <label for="">Email</label>
-        </div>
-        <div class="inputbox">
-          <ion-icon name="lock-closed-outline"></ion-icon>
-          <input type="password" required>
-          <label for="">Password</label>
-        </div>
-        <div class="forget">
-          <label>
-            <input type="checkbox"> Remember me
-          </label>
-          <label>
-            <a href="#">Forgot password?</a>
-          </label>
-        </div>
-        <button>Log in</button>
-        <div class="register">
-          <p>Don't have a account ? <a href="#">Register</a></p>
-        </div>
-      </form>
-    </div>
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+
+
+  <span class="logo-text" style="font-family: 'Times New Roman', Times, serif; margin-left:10px; color:aliceblue">Fc Barcelone Club De Fútbol</span> <!-- Text only --> 
+  <img src="../Images_fcb/logo.png" alt="image" width="50px" height="50px" style="margin-left: 30px;">
+  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav ml-auto">
+      <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-tachometer-alt"></i>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="far fa-address-book"></i>News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="far fa-clone"></i>Matches</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="far fa-calendar-alt"></i>Trophies</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><i class="far fa-chart-bar"></i>Players</a>
+      </li>
+
+    </ul>
   </div>
-</section>
-<!-- partial -->
-  <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
-<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+</nav>
 </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Culer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="login-box">
+  <h2>Welcome Back Culer !</h2>
+  <form>
+    <div class="user-box">
+      <input type="text" name="username" required>
+      <label>User name</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required>
+      <label>Password</label>
+    </div>
+    <a href="#" id="login-button">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Login
+    </a>
+  </form>
+</div>
+
+<script>
+  document.getElementById('login-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+
+    // Correct path to the home.html file
+    window.location.href = '/html/home.html'; // Make sure this matches your project structure
+  });
+</script>
+</body>
+</html>

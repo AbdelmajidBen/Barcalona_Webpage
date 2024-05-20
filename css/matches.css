@@ -398,3 +398,71 @@ h2 {
 .result p, .time p {
   margin: 5px 0;
 }
+
+.titlepic {
+  color:#fdc52c ; /* Mustard color */
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 34px; /* Adjust font size as needed */
+ /* Establish positioning context for pseudo-element */
+  display: inline-block; /* Ensure element only occupies necessary width */
+position: relative;
+  
+margin-left: 20px;
+  text-decoration: none; /* Remove default underline */
+
+  /* Animation for underline */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.titlepic::after {
+  content: ''; /* Create pseudo-element for underline */
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust distance of underline from text */
+  width: 0; /* Start with no width */
+  height: 2px; /* Thickness of underline */
+  background-color:#fdc52c; /* Burgundy color */
+  transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
+
+.titlepic:hover::after {
+  width: 100%; /* Expand width to 100% on hover */
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-info {
+  padding: 10px;
+}
+
+.card-info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card-info p {
+  margin: 0;
+}
